@@ -1,13 +1,24 @@
 import { useEffect, useState } from "react";
 
 // id, size, x, y, opacity, animationDuration
+// id, size, x, y, delay, animationDuration
 
 
 export const StarBackground = () => {
     const [stars, setStars] = useState([]);
+    const [meteors, setMeteors] = useState([]);
 
     useEffect(() => {
         generateStars();
+        generateMeteors();
+
+        const handleResize = () => {
+            generateMeteors();
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     const generateStars = () => {
@@ -26,6 +37,24 @@ export const StarBackground = () => {
         }
         setStars(newStars);
     };
+
+    const generateMeteors = () => {
+        const numberOfMeteros = 4;
+        const newMeteors = [];
+
+        for (let i = 0; i < numberOfMeteros; i++) {
+            newMeteors.push({
+                id: i,
+                size: Math.random() * 2 + 1,
+                x: Math.random() * 100,
+                y: Math.random() * 20,
+                delay: Math.random() * 15,
+                animatioDuration: Math.random() * 3 + 3,
+            });
+        }
+        setMeteors(newMeteors);
+    };
+
     return <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         {stars.map(star => (
             <div
@@ -41,10 +70,25 @@ export const StarBackground = () => {
                 }}
             />
         ))}
+
+        {meteors.map(meteor => (
+            <div
+                key={meteor.id}
+                className="meteor animate-meteor"
+                style={{
+                    width: `${meteor.size*30}px`,
+                    height: `${meteor.size}px`,
+                    left: `${meteor.x}%`,
+                    top: `${meteor.y}%`,
+                    animationDelay: meteor.delay,
+                    animationDuration: `${meteor.animatioDuration}s`,
+                }}
+            />
+        ))}
         <style>
             {`
                 @keyframes twinkle {
-                    0%, 100% { opacity: ${stars[0]?.opacity || 1}; }
+                    0%, 100% { opacity: ${meteors[0]?.opacity || 1}; }
                     50% { opacity: 0; }
                 }
             `}
