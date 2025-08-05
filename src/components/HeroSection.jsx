@@ -15,7 +15,7 @@ export const HeroSection = () => {
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> Hagness Mortensen</span>
                     </h1>
                     <h2 className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        TODO
+                        TODO tekst
                     </h2>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
