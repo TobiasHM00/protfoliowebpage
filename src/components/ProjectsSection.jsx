@@ -8,7 +8,7 @@ const projects = [
         title: "React + Vite portfolio",
         description: "A portfoliowebpage presenting me as a developer. This page is made using React and Vite",
         image: "/projects/portfolio.png",
-        tags: ["React", "JavaScript", "TailWindCSS", "HTML"],
+        tags: ["React", "TypeScript", "TailwindCSS",],
         demoUrl: "#",
         githubUrl: "https://github.com/TobiasHM00/protfoliowebpage",
     },
@@ -47,8 +47,8 @@ export const ProjectsSection = () => {
                             </div>
                             <div className="p-6">
                                 <div className="flex flex-wrap gap-2 mb-4">
-                                    {projects.tags.map((tag) => (
-                                        <span className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground">
+                                    {project.tags.map((tag, index) => (
+                                        <span key={index} className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground">
                                             {tag}
                                         </span>
                                     ))}
