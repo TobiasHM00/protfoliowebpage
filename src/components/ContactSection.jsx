@@ -151,7 +151,7 @@ export const ContactSection = () => {
                                     id="message" 
                                     name="message" 
                                     required 
-                                    className="h-40 w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"  
+                                    className="min-h-[3rem] h-40 w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-y"  
                                     placeholder="Message" 
                                 />
                             </div>
