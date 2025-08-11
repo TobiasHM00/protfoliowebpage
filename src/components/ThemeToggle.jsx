@@ -1,9 +1,10 @@
 import { Moon, Sun } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { cn } from '@/lib/utils';
 
 export const ThemeToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    // State to manage the current theme mode on launch
+    // True is dark mode, false is light mode.
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
     // This variable can be used to control whether the theme toggle button is shown or not. I am debating if i want to keep it or not.
     // true for showing the toggle, false for hiding it.
