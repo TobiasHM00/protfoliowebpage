@@ -6,15 +6,16 @@ const skills = [
     //backend
     {name: "Java", level: 80, category: "backend"},
     {name: "Python", level: 80, category: "backend"},
-    {name: "PostgreSQL", level: 60, category: "backend"},
+    {name: "PostgreSQL", level: 50, category: "backend"},
     {name: "C", level: 45, category: "backend"},
-    {name: "Kotlin", level: 55, category: "backend"},
+    {name: "Kotlin", level: 60, category: "backend"},
     {name: "Node.js", level: 45, category: "backend"},
+    {name: "Scheme", level: 25, category: "backend"},
 
     //frontend
-    {name: "JavaScript", level: 20, category: "frontend"},
-    {name: "HTML/CSS", level: 35, category: "frontend"},
-    {name: "TailWindCSS", level: 25, category: "frontend"},
+    {name: "JavaScript", level: 35, category: "frontend"},
+    {name: "HTML/CSS", level: 30, category: "frontend"},
+    {name: "TailWindCSS", level: 35, category: "frontend"},
 
     //development
     {name: "Android development", level: 50, category: "development"},
@@ -23,7 +24,7 @@ const skills = [
     {name: "Git/Github", level: 70, category: "tools"},
     {name: "Postman API", level: 85, category: "tools"},
     {name: "VS Code", level: 80, category: "tools"},
-    {name: "Teamplayer", level: 100, category: "tools"},
+    {name: "Teamplayer", level: 95, category: "tools"},
 ]
 
 const categories = ["all", "backend", "frontend", "tools", "development"];

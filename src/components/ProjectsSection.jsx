@@ -21,6 +21,14 @@ const projects = [
         demoUrl: "#",
         githubUrl: "#",
     },
+    {
+        id: 3,
+        title: "Gemstone interpret",
+        description: "A work in progress project between me and two friends from the university. We are making a programming language and an interpret for the language Gemstone",
+        image: "#",
+        tags: ["C"],
+        githubUrl: "#"
+    },
 ]
 
 export const ProjectsSection = () => {
@@ -32,8 +40,9 @@ export const ProjectsSection = () => {
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                     {/**TODO: skriv om */}
-                    Here are some of my projects. Each project was carefully 
-                    crafted with attention to detail, performance, and joy.
+                    Here are some of my projects. Each project is a step in my journey of learning, 
+                    experimenting, and creating with technology. The journey so far has been filled with joy, 
+                    some struggles and lots of chai tea.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, key) => (

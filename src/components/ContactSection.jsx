@@ -44,8 +44,8 @@ export const ContactSection = () => {
                     Contact <span className="text-primary"> Me</span>
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    TODO noe tekst som forklarer hva jeg er interessert i av muligheter.
-                    However, if you have other requests or questions, don't hesitate to contact me the form bellow.
+                    I am interested in every opportunity to learn and develop new and existing skills.
+                    However, if you have other requests or questions, don't hesitate to contact me using the form bellow.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-8">

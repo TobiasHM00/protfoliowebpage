@@ -15,7 +15,9 @@ export const HeroSection = () => {
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> Hagness Mortensen</span>
                     </h1>
                     <h2 className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        TODO tekst
+                        I create engaging projects that grow my expertise in backend development, with small touches of frontend to bring 
+                        them to life. This is not just a portfolio. It is a collection of experiments, successes, and the occasional 
+                        “how did I pull that off” moment. Step inside, explore, and you might walk away with an idea or two of your own.
                     </h2>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
