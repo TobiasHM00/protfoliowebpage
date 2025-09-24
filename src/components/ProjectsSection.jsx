@@ -19,7 +19,7 @@ const projects = [
         image: "/projects/sudoku.png",
         tags: ["Java"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/TobiasHM00/Sudoku",
     },
     {
         id: 3,
