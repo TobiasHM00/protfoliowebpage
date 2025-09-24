@@ -1,7 +1,6 @@
 Link to my webpage: https://tobiasmortensen-react-portfolio.vercel.app/
 
 # TODO:
-- Fylle all teksen som må skrives
 - Gjøre sånn at navbar-en skiller seg ut eller forsvinner når man skroller nedover
 
 # React + Vite
