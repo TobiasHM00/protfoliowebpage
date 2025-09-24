@@ -15,7 +15,7 @@ const projects = [
     {
         id: 2,
         title: "Sudoku",
-        description: "A place to play sudoku made with Java.",
+        description: "A place to play sudoku made with Java. A work in progress.",
         image: "/projects/sudoku.png",
         tags: ["Java"],
         demoUrl: "#",
