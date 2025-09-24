@@ -1,8 +1,5 @@
 Link to my webpage: https://tobiasmortensen-react-portfolio.vercel.app/
 
-# TODO:
-- Gjøre sånn at navbar-en skiller seg ut eller forsvinner når man skroller nedover
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
