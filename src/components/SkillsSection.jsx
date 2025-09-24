@@ -4,27 +4,27 @@ import { cn } from "@/lib/utils";
 const skills = [
     // TODO: legge til en tekst som forklarer mer hver skill?
     //backend
-    {name: "Java", level: 80, category: "backend"},
-    {name: "Python", level: 80, category: "backend"},
-    {name: "PostgreSQL", level: 50, category: "backend"},
-    {name: "C", level: 45, category: "backend"},
-    {name: "Kotlin", level: 60, category: "backend"},
-    {name: "Node.js", level: 45, category: "backend"},
-    {name: "Scheme", level: 25, category: "backend"},
+    {name: "Java", level: 80, category: "backend", usedIn: "University, Personal projects"},
+    {name: "Python", level: 80, category: "backend", usedIn: "University, Advent of Code"},
+    {name: "PostgreSQL", level: 50, category: "backend", usedIn: "University"},
+    {name: "C", level: 45, category: "backend", usedIn: "University, Group project"},
+    {name: "Kotlin", level: 60, category: "backend", usedIn: "University"},
+    {name: "Node.js", level: 45, category: "backend", usedIn: "Personal projects"},
+    {name: "Scheme", level: 25, category: "backend", usedIn: "University"},
 
     //frontend
-    {name: "JavaScript", level: 35, category: "frontend"},
-    {name: "HTML/CSS", level: 30, category: "frontend"},
-    {name: "TailWindCSS", level: 35, category: "frontend"},
+    {name: "JavaScript", level: 35, category: "frontend", usedIn: "Personal projects"},
+    {name: "HTML/CSS", level: 30, category: "frontend", usedIn: "Personal projects"},
+    {name: "TailWindCSS", level: 35, category: "frontend", usedIn: "Personal projects"},
 
     //development
-    {name: "Android development", level: 50, category: "development"},
-    
+    {name: "Android development", level: 50, category: "development", usedIn: "University"},
+
     //Tools
-    {name: "Git/Github", level: 70, category: "tools"},
-    {name: "Postman API", level: 85, category: "tools"},
-    {name: "VS Code", level: 80, category: "tools"},
-    {name: "Teamplayer", level: 95, category: "tools"},
+    {name: "Git/Github", level: 70, category: "tools", usedIn: "University, Personal projects"},
+    {name: "Postman API", level: 85, category: "tools", usedIn: "University"},
+    {name: "VS Code", level: 80, category: "tools", usedIn: "University, Personal projects"},
+    {name: "Teamplayer", level: 95, category: "tools", usedIn: "University, Group projects"},
 ]
 
 const categories = ["all", "backend", "frontend", "tools", "development"];
@@ -71,6 +71,9 @@ export const SkillsSection = () => {
                             </div>
                             <div className="text-right mt-1">
                                 <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                            </div>
+                            <div>
+                                <span className="text-sm text-muted-foreground">Where did I use this skill: <br /> {skill.usedIn}</span>
                             </div>
                         </div>
                     ))}

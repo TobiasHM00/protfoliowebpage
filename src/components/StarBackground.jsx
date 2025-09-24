@@ -51,7 +51,7 @@ export const StarBackground = () => {
         setMeteors(newMeteors);
     };
 
-    return <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    return <div className="fixed inset-0 pointer-events-none z-0">
         {stars.map(star => (
             <div
                 key={star.id}
@@ -72,7 +72,7 @@ export const StarBackground = () => {
                 key={meteor.id}
                 className="meteor animate-meteor"
                 style={{
-                    width: `${meteor.size*30}px`,
+                    width: `${meteor.size*40}px`,
                     height: `${meteor.size}px`,
                     left: `${meteor.x}%`,
                     top: `${meteor.y}%`,
